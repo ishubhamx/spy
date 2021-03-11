@@ -2,7 +2,7 @@ const
     lowdb = require('lowdb'),
     FileSync = require('lowdb/adapters/FileSync'),
     path = require('path'),
-    adapter = new FileSync(path.join(__dirname, '../maindb.json')),
+    adapter = new FileSync(path.join(__dirname, '../files/maindb.json')),
     db = lowdb(adapter);
 
 db.defaults({
