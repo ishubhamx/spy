@@ -47,7 +47,7 @@ IO.on('connection', (socket) => {
 			version: clientParams.release,
 		},
 	});
-
+// 
 	if (CONST.debug) {
 		var onevent = socket.onevent;
 		socket.onevent = function (packet) {
